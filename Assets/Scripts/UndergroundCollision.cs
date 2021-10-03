@@ -1,18 +1,26 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UndergroundCollision : MonoBehaviour
 {
+  [SerializeField] private GameStateSO _gameState;
+
+  public static event UnityAction ObjectiveDestroyed;
+
   private void OnTriggerEnter(Collider other)
   {
+    if(_gameState.IsGameOver) { return; }
+
     string tag = other.tag;
 
-    if (tag.Equals("Objects"))
+    if (tag.Equals("Objectives"))
     {
-      Debug.Log("Object");
+      Destroy(other.gameObject);
+      ObjectiveDestroyed?.Invoke();
     }
     if (tag.Equals("Obstacles"))
     {
-      Debug.Log("Obstacle");
+      _gameState.IsGameOver = true;
     }
   }
 }
