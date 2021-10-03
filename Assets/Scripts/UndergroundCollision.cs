@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UndergroundCollision : MonoBehaviour
@@ -8,11 +6,11 @@ public class UndergroundCollision : MonoBehaviour
   {
     string tag = other.tag;
 
-    if (tag.Equals("Object"))
+    if (tag.Equals("Objects"))
     {
-      Debug.Log("objObjectect");
+      Debug.Log("Object");
     }
-    if (tag.Equals("Obstacle"))
+    if (tag.Equals("Obstacles"))
     {
       Debug.Log("Obstacle");
     }
