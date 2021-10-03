@@ -14,6 +14,7 @@ public class HoleMovement : MonoBehaviour
 
   [Space]
   [SerializeField] private float _moveSpeed;
+  [SerializeField] private Vector2 _startPosition;
 
   [Space]
   [SerializeField] private GameStateSO _gameState;
@@ -27,6 +28,7 @@ public class HoleMovement : MonoBehaviour
   {
     _mesh = _meshFilter.mesh;
     _holeVertices = new HoleVerticesProvider(_mesh, _holeCenter, _radius);
+    MoveToLevelStartPosition();
   }
 
   private void Update()
@@ -71,6 +73,12 @@ public class HoleMovement : MonoBehaviour
       );
 
     _holeCenter.position = targetPos;
+  }
+
+  private void MoveToLevelStartPosition()
+  {
+    _holeCenter.position = new Vector3(_startPosition.x, _holeCenter.position.y, _startPosition.y);
+    UpdateHoleVerticesPosition();
   }
 
   private void OnDrawGizmos()
