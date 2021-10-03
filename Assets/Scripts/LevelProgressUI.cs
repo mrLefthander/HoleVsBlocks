@@ -1,13 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class LevelProgressUI : MonoBehaviour
 {
   [SerializeField] private LevelStateSO _levelState;
   [SerializeField] private TMP_Text _currentLevelText;
   [SerializeField] private TMP_Text _nextLevelText;
-  [SerializeField] private Image _progressFillImage;
+
+
+  [Space]
+  [SerializeField] private Image _progressFillImage;  
+  [SerializeField] private float _fillSpeed = 0.3f;
 
 
   private void Start()
@@ -26,7 +31,8 @@ public class LevelProgressUI : MonoBehaviour
 
   private void UpdateProgressFill()
   {
-    _progressFillImage.fillAmount = 1f - (float)_levelState.CurrentObjectivesCount / _levelState.TotalObjectivesCount;
+    float fillValue = 1f - (float)_levelState.CurrentObjectivesCount / _levelState.TotalObjectivesCount;
+    _progressFillImage.DOFillAmount(fillValue, _fillSpeed);
   }
 
   private void OnDestroy()
