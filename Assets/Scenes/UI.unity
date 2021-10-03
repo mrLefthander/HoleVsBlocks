@@ -385,7 +385,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.746
+  m_FillAmount: 0.455
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 1698099844}
   - component: {fileID: 1698099847}
   - component: {fileID: 1698099846}
+  - component: {fileID: 1698099848}
   m_Layer: 5
   m_Name: LevelProgressBG
   m_TagString: Untagged
@@ -718,6 +719,22 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.1764706}
   m_EffectDistance: {x: 0, y: -5.5}
   m_UseGraphicAlpha: 1
+--- !u!114 &1698099848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698099842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d9156ca4b0cb941b84c0c6f6a2f0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelState: {fileID: 11400000, guid: 46af14ad7646d5d498b4cbdc67ccfcbf, type: 2}
+  _currentLevelText: {fileID: 1259319860}
+  _nextLevelText: {fileID: 49720355}
+  _progressFillImage: {fileID: 699329908}
 --- !u!1 &2090051369
 GameObject:
   m_ObjectHideFlags: 0
