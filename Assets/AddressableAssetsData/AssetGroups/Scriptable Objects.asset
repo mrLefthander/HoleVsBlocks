@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Scriptable Objects
+  m_EditorClassIdentifier: 
+  m_GroupName: Scriptable Objects
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c1ad7e914ff28d644a729b4fea520e25
+  m_SerializeEntries:
+  - m_GUID: c44b0520440961e43b1554251e39d86f
+    m_Address: Assets/ScriptableObjects/Game State.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 46af14ad7646d5d498b4cbdc67ccfcbf
+    m_Address: Assets/ScriptableObjects/Level State.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 569fb50c916ec5145b08902926eb499c
+    m_Address: Assets/ScriptableObjects/SceneLoadEventChannel.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 6c0e591db3220e84e84b44659f52fce9, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 85c6878cf043575419c783354180fdc5, type: 2}
+    - {fileID: 11400000, guid: 94433442fd7cf9f42ba1f9230f6f29b9, type: 2}

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Scenes
+  m_EditorClassIdentifier: 
+  m_GroupName: Scenes
+  m_Data:
+    m_SerializedData: []
+  m_GUID: f1f676bd8fde4d44189e957ecc8c5d70
+  m_SerializeEntries:
+  - m_GUID: 9fc0d4010bbf28b4594072e72b8655ab
+    m_Address: Assets/Scenes/Levels/1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Levels
+    m_MainAsset: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 9fc0d4010bbf28b4594072e72b8655ab, type: 3}
+  - m_GUID: bc8ec2f4278e64b45a2e780619f0144e
+    m_Address: Assets/Scenes/Levels/2.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Levels
+    m_MainAsset: {fileID: 102900000, guid: bc8ec2f4278e64b45a2e780619f0144e, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: bc8ec2f4278e64b45a2e780619f0144e, type: 3}
+  - m_GUID: df11c221485afc04baa4aceaef62a329
+    m_Address: Assets/Scenes/Table.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Gameplay
+    m_MainAsset: {fileID: 102900000, guid: df11c221485afc04baa4aceaef62a329, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: df11c221485afc04baa4aceaef62a329, type: 3}
+  - m_GUID: 81aa128bedc30e142b0f23475191c91b
+    m_Address: Assets/Scenes/UI.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Gameplay
+    m_MainAsset: {fileID: 102900000, guid: 81aa128bedc30e142b0f23475191c91b, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 81aa128bedc30e142b0f23475191c91b, type: 3}
+  - m_GUID: c792e2e105bc91e47940dfb2004ecd41
+    m_Address: Assets/Scenes/MainMenu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - MainMenu
+    m_MainAsset: {fileID: 102900000, guid: c792e2e105bc91e47940dfb2004ecd41, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: c792e2e105bc91e47940dfb2004ecd41, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 6c0e591db3220e84e84b44659f52fce9, type: 2}
+  m_SchemaSet:
+    m_Schemas: []
