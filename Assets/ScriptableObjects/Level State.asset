@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac7a6ac277b3ee94abf9baf688033e09, type: 3}
   m_Name: Level State
   m_EditorClassIdentifier: 
-  TotalObjectivesCount: 0
-  CurrentObjectivesCount: 0
+  _levelLabel:
+    m_LabelString: Levels
+  _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
