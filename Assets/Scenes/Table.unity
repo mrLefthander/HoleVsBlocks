@@ -443,6 +443,7 @@ MonoBehaviour:
   _moveSpeed: 40
   _startPosition: {x: 0, y: -2}
   _gameState: {fileID: 11400000, guid: c44b0520440961e43b1554251e39d86f, type: 2}
+  _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
 --- !u!1 &485329089
 GameObject:
   m_ObjectHideFlags: 0

@@ -617,11 +617,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1698099843}
+  - component: {fileID: 1698099848}
   - component: {fileID: 1698099845}
   - component: {fileID: 1698099844}
   - component: {fileID: 1698099847}
   - component: {fileID: 1698099846}
-  - component: {fileID: 1698099848}
   m_Layer: 5
   m_Name: LevelProgressBG
   m_TagString: Untagged
@@ -731,10 +731,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d9156ca4b0cb941b84c0c6f6a2f0e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelState: {fileID: 11400000, guid: 46af14ad7646d5d498b4cbdc67ccfcbf, type: 2}
   _currentLevelText: {fileID: 1259319860}
   _nextLevelText: {fileID: 49720355}
   _progressFillImage: {fileID: 699329908}
+  _fillSpeed: 0.3
+  _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
+  _levelState: {fileID: 11400000, guid: 46af14ad7646d5d498b4cbdc67ccfcbf, type: 2}
 --- !u!1 &2090051369
 GameObject:
   m_ObjectHideFlags: 0
