@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class HoleVerticesProvider
 {
+  public int Count => Indexes.Count;
   public List<int> Indexes { get; private set; } = new List<int>();
   public List<Vector3> Offsets { get; private set; } = new List<Vector3>();
-  public int Count => Indexes.Count;
-
+  
   private Mesh _mesh;
   private float _maxDistance;
   private Transform _origin;  
