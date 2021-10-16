@@ -37,9 +37,9 @@ public class SceneLoader : MonoBehaviour
   private void LoadGameplay()
   {
     Addressables.UnloadSceneAsync(_currentlyActiveScene, true);
-    Addressables.LoadSceneAsync(_tableScene, LoadSceneMode.Additive);
-    Addressables.LoadSceneAsync(_levels.LevelLocation, LoadSceneMode.Additive).Completed += SceneLoadCompleted;
     Addressables.LoadSceneAsync(_uiScene, LoadSceneMode.Additive);
+    Addressables.LoadSceneAsync(_tableScene, LoadSceneMode.Additive);
+    Addressables.LoadSceneAsync(_levels.LevelLocation, LoadSceneMode.Additive).Completed += SceneLoadCompleted;    
   }
 
   private void SceneLoadCompleted(AsyncOperationHandle<SceneInstance> handle)
