@@ -1,9 +1,15 @@
 using UnityEngine;
 using UnityEngine.Events;
+using DG.Tweening;
 
 public class UndergroundCollision : MonoBehaviour
 {
   [SerializeField] private GameStateSO _gameState;
+  [SerializeField] private SceneLoadChannelSO _sceneLoadEventChannel;
+
+  [Header("Game Lose Shake parameters")]
+  [SerializeField] private float _shakeDuration = 1f;
+  [SerializeField] private float _shakeStrenght = 0.2f;
 
   public static event UnityAction ObjectiveDestroyed;
 
@@ -20,7 +26,11 @@ public class UndergroundCollision : MonoBehaviour
     }
     if (tag.Equals("Obstacles"))
     {
-      _gameState.IsGameOver = true;
+      //_gameState.IsGameOver = true;
+      Camera.main.transform
+        .DOShakePosition(_shakeDuration, _shakeStrenght)
+        .OnComplete(() => 
+        _sceneLoadEventChannel.RaiseNextLevelEvent());
     }
   }
 }
