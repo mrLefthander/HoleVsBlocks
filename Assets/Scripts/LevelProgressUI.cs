@@ -14,6 +14,7 @@ public class LevelProgressUI : MonoBehaviour
   [Header("Scriptable Objects")]
   [SerializeField] private SceneLoadChannelSO _sceneLoadEventChannel;
   [SerializeField] private LevelStateSO _levelState;
+  [SerializeField] private ColorSchemePickerSO _schemePicker;
 
   private void Start()
   {
@@ -29,7 +30,7 @@ public class LevelProgressUI : MonoBehaviour
   }
 
   private void InitializeNewLevel()
-  {
+  {    
     _progressFillImage.DOFillAmount(0f, _fillSpeed * 2);
 
     int levelNumber = _levelState.CurrentLevelIndex + 1;
@@ -37,6 +38,7 @@ public class LevelProgressUI : MonoBehaviour
 
     string nextLevelText = _levelState.IsLastLevel ? "!" : (levelNumber + 1).ToString();
     _nextLevelText.text = nextLevelText;
+    _progressFillImage.color = _schemePicker.Current.TableBorderColor;
   }
 
   private void UpdateProgressFill()

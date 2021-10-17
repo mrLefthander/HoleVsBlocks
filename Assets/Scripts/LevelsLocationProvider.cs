@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.ResourceLocations;
 
@@ -21,7 +22,8 @@ public class LevelsLocationProvider
 
   public IResourceLocation GetLevelLocation(int levelIndex)
   {
-    return _levelsLocations[levelIndex];
+    int index = Mathf.Clamp(levelIndex, 0, _levelsLocations.Count - 1);
+    return _levelsLocations[index];
   }
 
   public bool IsLastLevel(int levelIndex)

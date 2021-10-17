@@ -308,6 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameState: {fileID: 11400000, guid: c44b0520440961e43b1554251e39d86f, type: 2}
+  _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
+  _shakeDuration: 1
+  _shakeStrenght: 0.2
 --- !u!1 &426757066
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,11 +440,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _meshFilter: {fileID: 1321151426}
   _meshCollider: {fileID: 1321151424}
-  _moveLimits: {x: 1.3, y: 2.25}
   _radius: 0.4
-  _holeCenter: {fileID: 431461091}
   _moveSpeed: 40
+  _holeCenter: {fileID: 431461091}
   _startPosition: {x: 0, y: -2}
+  _moveLimits: {x: 1.3, y: 2.25}
   _gameState: {fileID: 11400000, guid: c44b0520440961e43b1554251e39d86f, type: 2}
   _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
 --- !u!1 &485329089
@@ -858,6 +861,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1476716094}
+  - component: {fileID: 1476716095}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -883,6 +887,24 @@ Transform:
   m_Father: {fileID: 1887900161}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1476716095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476716093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556ec67f2b3d2eb41a78535e321c6562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
+  _schemePicker: {fileID: 11400000, guid: ddf674b528d91fa4180dbdd75c8c3a0f, type: 2}
+  _groundMaterial: {fileID: 2100000, guid: dcf91dc401873344ab5126813b1a62ab, type: 2}
+  _obstacleMaterial: {fileID: 2100000, guid: ad8eae83ce14e834b995f8589611708f, type: 2}
+  _borders: {fileID: 1358459973}
+  _front: {fileID: 1205454558}
 --- !u!1 &1642697420
 GameObject:
   m_ObjectHideFlags: 0

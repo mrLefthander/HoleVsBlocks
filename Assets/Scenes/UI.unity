@@ -486,6 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ff8fa199b9a75c46acedef2deb482ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fadeTime: 1
   _fadePanel: {fileID: 897216450}
   _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
 --- !u!1 &924664423
@@ -827,6 +828,7 @@ MonoBehaviour:
   _fillSpeed: 0.3
   _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
   _levelState: {fileID: 11400000, guid: 46af14ad7646d5d498b4cbdc67ccfcbf, type: 2}
+  _schemePicker: {fileID: 11400000, guid: ddf674b528d91fa4180dbdd75c8c3a0f, type: 2}
 --- !u!1 &2090051369
 GameObject:
   m_ObjectHideFlags: 0
