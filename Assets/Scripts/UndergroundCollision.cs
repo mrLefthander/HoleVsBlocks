@@ -4,27 +4,32 @@ using DG.Tweening;
 
 public class UndergroundCollision : MonoBehaviour
 {
-  [SerializeField] private GameStateSO _gameState;
-  [SerializeField] private SceneLoadChannelSO _sceneLoadEventChannel;
+  [Header("Collisions Layer Masks")]
+  [SerializeField] private LayerMask _objectivesLayerMask;
+  [SerializeField] private LayerMask _obstaclesLayerMask;
 
   [Header("Game Lose Shake parameters")]
   [SerializeField] private float _shakeDuration = 1f;
   [SerializeField] private float _shakeStrenght = 0.2f;
 
-  public static event UnityAction ObjectiveDestroyed;
+  [Header("Scriptable Objects Channels")]
+  [SerializeField] private GameStateSO _gameState;
+  [SerializeField] private SceneLoadChannelSO _sceneLoadEventChannel;
+
+  public static event UnityAction<Rigidbody> ObjectiveDestroyed;
 
   private void OnTriggerEnter(Collider other)
   {
     if(_gameState.IsGameOver) { return; }
 
-    string tag = other.tag;
+    int layer = other.gameObject.layer;
 
-    if (tag.Equals("Objectives"))
+    if (CompareLayerWithMask(layer, _objectivesLayerMask))
     {
       Destroy(other.gameObject);
-      ObjectiveDestroyed?.Invoke();
+      ObjectiveDestroyed?.Invoke(other.attachedRigidbody);
     }
-    if (tag.Equals("Obstacles"))
+    if (CompareLayerWithMask(layer, _obstaclesLayerMask))
     {
       //_gameState.IsGameOver = true;
       Camera.main.transform
@@ -32,5 +37,10 @@ public class UndergroundCollision : MonoBehaviour
         .OnComplete(() => 
         _sceneLoadEventChannel.RaiseNextLevelEvent());
     }
+  }
+
+  private bool CompareLayerWithMask(int layer, LayerMask mask)
+  {
+    return mask == (mask | (1 << layer));
   }
 }
