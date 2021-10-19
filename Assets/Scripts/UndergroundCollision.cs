@@ -31,7 +31,7 @@ public class UndergroundCollision : MonoBehaviour
     }
     if (CompareLayerWithMask(layer, _obstaclesLayerMask))
     {
-      //_gameState.IsGameOver = true;
+      _gameState.IsGameOver = true;
       Camera.main.transform
         .DOShakePosition(_shakeDuration, _shakeStrenght)
         .OnComplete(() => 

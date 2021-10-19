@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e78e1e615fac9549a81aa0f6eccda7c, type: 3}
   m_Name: Game State
   m_EditorClassIdentifier: 
-  IsMoving: 0
+  _sceneLoadEventChannel: {fileID: 11400000, guid: 569fb50c916ec5145b08902926eb499c, type: 2}
   IsGameOver: 0

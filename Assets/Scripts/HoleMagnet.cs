@@ -6,6 +6,7 @@ public class HoleMagnet : MonoBehaviour
 {
   [SerializeField] private float _magnetForce;
   [SerializeField] private SceneLoadChannelSO _sceneLoadEventChannel;
+  [SerializeField] private GameStateSO _gameState;
 
   private List<Rigidbody> _affectedRigidbodies = new List<Rigidbody>();
   private Transform _holeTransform;
@@ -20,7 +21,7 @@ public class HoleMagnet : MonoBehaviour
 
   private void FixedUpdate()
   {
-    if (_affectedRigidbodies.Count <= 0) { return; }
+    if (_affectedRigidbodies.Count <= 0 || _gameState.IsGameOver) { return; }
 
     foreach (Rigidbody rb in _affectedRigidbodies)
     {
@@ -41,6 +42,7 @@ public class HoleMagnet : MonoBehaviour
   private void OnDestroy()
   {
     UndergroundCollision.ObjectiveDestroyed -= RemoveFromMagnetField;
+    _sceneLoadEventChannel.OnNextLevelRequested -= RemoveAllFromMagnetField;
   }
 
   private void AddToMagnetField(Rigidbody rb)
