@@ -37,7 +37,7 @@ public class LevelStateSO : ScriptableObject
     UndergroundCollision.ObjectiveDestroyed -= OnObjectiveDestroyed;
   }
 
-  private void OnObjectiveDestroyed()
+  private void OnObjectiveDestroyed(Rigidbody rb)
   {
     _currentObjectivesCount--;
     CheckLevelWin();

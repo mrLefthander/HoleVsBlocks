@@ -41,7 +41,7 @@ public class LevelProgressUI : MonoBehaviour
     _progressFillImage.color = _schemePicker.Current.TableBorderColor;
   }
 
-  private void UpdateProgressFill()
+  private void UpdateProgressFill(Rigidbody rb)
   {
     float fillValue = 1f - _levelState.LevelProgress;
     _progressFillImage.DOFillAmount(fillValue, _fillSpeed);
