@@ -80,6 +80,7 @@ MonoBehaviour:
     - MainMenu
     - Prefab
     - ColorScheme
+    - GameEndMenu
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 8c369962c0980c940a043aa44dd0b530, type: 2}

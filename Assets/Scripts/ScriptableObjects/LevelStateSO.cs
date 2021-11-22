@@ -1,12 +1,17 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.ResourceLocations;
+using DG.Tweening;
 
 [CreateAssetMenu(fileName = "Level State", menuName = "Game/Level State")]
 public class LevelStateSO : ScriptableObject
 {
   [SerializeField] private AssetLabelReference _levelLabel;
   [SerializeField] private SceneLoadChannelSO _sceneLoadEventChannel;
+
+  [Header("Game End Shake parameters")]
+  [SerializeField] private float _shakeDuration = 1f;
+  [SerializeField] private float _shakeStrenght = 0.2f;
 
   public float LevelProgress => (float)_currentObjectivesCount / _totalObjectivesCount;
   public int CurrentLevelIndex { get; private set; }
@@ -47,14 +52,17 @@ public class LevelStateSO : ScriptableObject
   {
     if (_currentObjectivesCount > 0) { return; }
 
-    UpdateCurrentLevelIndex();
-    _sceneLoadEventChannel.RaiseNextLevelEvent();
-  }
-
-  private void UpdateCurrentLevelIndex()
-  {
-    if (IsLastLevel) { return;  }
-    
-    CurrentLevelIndex++;
+    if (IsLastLevel)
+    {
+      CurrentLevelIndex = 0;
+      Camera.main.transform
+        .DOShakeRotation(_shakeDuration, _shakeStrenght)
+        .OnComplete(() => _sceneLoadEventChannel.RaiseGameEndEvent());
+    }
+    else
+    {
+      CurrentLevelIndex++;
+      _sceneLoadEventChannel.RaiseNextLevelEvent();
+    }    
   }
 }

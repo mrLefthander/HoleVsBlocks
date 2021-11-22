@@ -28,4 +28,9 @@ public class GameStateSO : ScriptableObject
   {
     IsGameOver = false;
   }
+
+  public void QuitGame()
+  {
+    Application.Quit();
+  }
 }

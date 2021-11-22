@@ -6,6 +6,7 @@ public class SceneLoadChannelSO : ScriptableObject
 {
 	public UnityAction OnGameStartRequested;
 	public UnityAction OnNextLevelRequested;
+	public UnityAction OnGameEndRequested;
 
 	public void RaiseGameStartEvent()
 	{
@@ -15,5 +16,10 @@ public class SceneLoadChannelSO : ScriptableObject
 	public void RaiseNextLevelEvent()
   {
 		OnNextLevelRequested?.Invoke();
+	}
+
+	public void RaiseGameEndEvent()
+	{
+		OnGameEndRequested?.Invoke();
 	}
 }

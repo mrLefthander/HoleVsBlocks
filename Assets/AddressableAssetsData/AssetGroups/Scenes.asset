@@ -52,6 +52,13 @@ MonoBehaviour:
     - MainMenu
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
+  - m_GUID: 78e897b3b5d6e474a85abd8cf3b7426f
+    m_Address: Assets/Scenes/GameEndMenu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - GameEndMenu
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6c0e591db3220e84e84b44659f52fce9, type: 2}
   m_SchemaSet:
