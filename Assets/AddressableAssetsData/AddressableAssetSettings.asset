@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
   m_Name: AddressableAssetSettings
   m_EditorClassIdentifier: 
-  m_DefaultGroup: d5289a5fe33ed0144aa9e151b136a632
+  m_DefaultGroup: f1f676bd8fde4d44189e957ecc8c5d70
   m_CachedHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_DisableCatalogUpdateOnStart: 0
   m_IgnoreUnsupportedFilesInBuild: 0
@@ -25,16 +25,16 @@ MonoBehaviour:
   m_maxConcurrentWebRequests: 500
   m_ContiguousBundles: 1
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 126486a345056d6468a56ab934a5aeb0
   m_RemoteCatalogLoadPath:
-    m_Id: 
+    m_Id: 53ecff2034e9bbb43a83b648c61a4734
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: 6b133b02b58024242b6ba9a75280dc11, type: 2}
   - {fileID: 11400000, guid: 8a8bb5347365d98488c1643ae813e34d, type: 2}
   - {fileID: 11400000, guid: 7b082500a56a8284987f464a5052cffb, type: 2}
-  - {fileID: 11400000, guid: b45c85549fad2d64bb2241dd88104732, type: 2}
   - {fileID: 11400000, guid: 23c2034657f4d7041888f1f53b790d4d, type: 2}
+  - {fileID: 11400000, guid: 54c3774daaecb5c47be50bdd70a21455, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1

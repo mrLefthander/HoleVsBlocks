@@ -4,7 +4,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.ResourceManagement.ResourceProviders;
 
-public class SceneLoader : MonoBehaviour
+public class SceneLoader: MonoBehaviour
 {
   [Header("Scene references")]
   [SerializeField] private AssetReference _mainMenuScene;
@@ -45,7 +45,7 @@ public class SceneLoader : MonoBehaviour
     Addressables.UnloadSceneAsync(_currentlyActiveScene, true);
     Addressables.LoadSceneAsync(_uiScene, LoadSceneMode.Additive).Completed += (h) => _uiSceneRef = h.Result;
     Addressables.LoadSceneAsync(_tableScene, LoadSceneMode.Additive).Completed += (h) => _tableSceneRef = h.Result;
-    Addressables.LoadSceneAsync(_levels.LevelLocation, LoadSceneMode.Additive).Completed += SceneLoadCompleted;    
+    Addressables.LoadSceneAsync(_levels.LevelLocation, LoadSceneMode.Additive).Completed += SceneLoadCompleted;
   }
   private void LoadGameEnd()
   {
@@ -54,7 +54,6 @@ public class SceneLoader : MonoBehaviour
     Addressables.UnloadSceneAsync(_tableSceneRef, true);
 
     Addressables.LoadSceneAsync(_endMenuScene, LoadSceneMode.Additive).Completed += SceneLoadCompleted;
-    
   }
 
   private void SceneLoadCompleted(AsyncOperationHandle<SceneInstance> handle)

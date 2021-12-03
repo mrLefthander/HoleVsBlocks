@@ -15,7 +15,7 @@ MonoBehaviour:
   m_GroupName: Scriptable Objects
   m_Data:
     m_SerializedData: []
-  m_GUID: c1ad7e914ff28d644a729b4fea520e25
+  m_GUID: dea9aaba7320943428134d27dff96b34
   m_SerializeEntries:
   - m_GUID: c44b0520440961e43b1554251e39d86f
     m_Address: Assets/ScriptableObjects/Game State.asset
@@ -39,5 +39,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: 6c0e591db3220e84e84b44659f52fce9, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 85c6878cf043575419c783354180fdc5, type: 2}
-    - {fileID: 11400000, guid: 94433442fd7cf9f42ba1f9230f6f29b9, type: 2}
+    - {fileID: 11400000, guid: bc9f89586a3c06842a5cca3cba789ca1, type: 2}
+    - {fileID: 11400000, guid: 9a2f17ef8bf90074486b5a013b1871d6, type: 2}

@@ -21,22 +21,22 @@ MonoBehaviour:
     m_Address: Assets/ScriptableObjects/Color Schemes/Color Scheme Picker.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 11400000, guid: ddf674b528d91fa4180dbdd75c8c3a0f, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: ddf674b528d91fa4180dbdd75c8c3a0f, type: 2}
   - m_GUID: 9e374203d6436e947982a3956c54fb13
     m_Address: Assets/ScriptableObjects/Color Schemes/Orange.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - ColorScheme
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 11400000, guid: 9e374203d6436e947982a3956c54fb13, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 9e374203d6436e947982a3956c54fb13, type: 2}
   - m_GUID: 6a5a4f7062fb7c240a8cac8a62430814
     m_Address: Assets/ScriptableObjects/Color Schemes/Purple.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - ColorScheme
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 11400000, guid: 6a5a4f7062fb7c240a8cac8a62430814, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 6a5a4f7062fb7c240a8cac8a62430814, type: 2}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6c0e591db3220e84e84b44659f52fce9, type: 2}
   m_SchemaSet:

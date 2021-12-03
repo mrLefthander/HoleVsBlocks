@@ -451,7 +451,7 @@ MonoBehaviour:
   _meshFilter: {fileID: 1321151426}
   _meshCollider: {fileID: 1321151424}
   _radius: 0.4
-  _moveSpeed: 40
+  _moveSpeed: 1
   _holeCenter: {fileID: 431461091}
   _startPosition: {x: 0, y: -2}
   _moveLimits: {x: 1.3, y: 2.25}
